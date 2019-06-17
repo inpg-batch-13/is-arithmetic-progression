@@ -2,16 +2,20 @@ function isArithmeticProgression (numbers) {
 
   var difference = numbers[1] - numbers[0]
 
-  for (var i = numbers.length - 1; i >= 0; i--){
-    if (numbers[i] - numbers[i-1] == difference) {
-      return true
-    }
-    else {
+
+  for (var i = numbers.length - 1; i > 0; i--){
+
+    if (numbers[i] - numbers[i-1] != difference) {
       return false
     }
+
   }
+
+  return true
   
-  }
+}
+
+  
 
 
 // TEST CASES
