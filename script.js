@@ -1,6 +1,18 @@
 function isArithmeticProgression (numbers) {
-  // Your code here
+  var satu = numbers[1] - numbers[0]
+
+  
+  for (var i = 0; i < numbers.length - 1; i++){
+   var dua = numbers[i+1] - numbers[i]  
+
+if (satu != dua){
+  return false}
+  
 }
+return true
+
+}
+
 
 // TEST CASES
 console.log(isArithmeticProgression([1, 2, 3, 4, 5, 6])); // true
