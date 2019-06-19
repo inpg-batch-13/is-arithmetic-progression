@@ -7,8 +7,8 @@ function isArithmeticProgression (numbers)
     if (dif1 != dif2) {
       return false }
     }
+    return true
   }
-      return true
 // TEST CASES
 console.log(isArithmeticProgression([1, 2, 3, 4, 5, 6])); // true
 console.log(isArithmeticProgression([2, 4, 6, 12, 24])); // false
